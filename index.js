@@ -29,6 +29,7 @@ const batteryStore = {};
     args: [
       "--disable-dev-shm-usage",
       "--no-sandbox",
+      `--user-agent=${config.userAgent}`,
       `--lang=${config.language}`,
       config.ignoreCertificateErrors && "--ignore-certificate-errors"
     ].filter((x) => x),

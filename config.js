@@ -41,6 +41,7 @@ module.exports = {
   baseUrl: process.env.HA_BASE_URL,
   accessToken: process.env.HA_ACCESS_TOKEN,
   cronJob: process.env.CRON_JOB || "* * * * *",
+  userAgent: process.env.USER_AGENT || "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36",
   useImageMagick: process.env.USE_IMAGE_MAGICK === "true",
   pages: getPagesConfig(),
   port: process.env.PORT || 5000,
